@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: blue
+}
+section:nth-of-type(2){
+    background-color: yellow;
+}
+section:nth-of-type(3){
+    background-color: green;
+}
+.title{
+    position: absolute;
+    height: 120px;
+    top: 0px;
+    left: 10px;
+    width: 130px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white
+}
+.title .circle{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    position: relative;
+    top: 50%;
+    left:0%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+span{
+    position: absolute;
+    width: 20px;
+    height: 70px;
+    left: 0px;
+    text-align: center;
+    transform-origin: bottom center;
+    transition: .5s;
+}
+
