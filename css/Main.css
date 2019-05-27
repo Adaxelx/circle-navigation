@@ -23,14 +23,13 @@ section:nth-of-type(3){
     width: 130px;
     border-radius: 50%;
     font-size: 1.5rem;
-    color: white
 }
 .title .circle{
-    height: 40px;
-    width: 40px;
+    height: 33px;
+    width: 33px;
     background-color: black;
     position: relative;
-    top: 50%;
+    top: 55%;
     left:0%;
     transform: translateY(-50%);
     border-radius: 50%;

@@ -53,12 +53,23 @@ const changeWord = () => {
     }
     p.innerHTML = '';
     const spanArr = word.map(letter => `<span>${letter}</span>`)
-    p.innerHTML = `${spanArr}`
+    p.innerHTML = `${spanArr.join("")}`
     spans = document.querySelectorAll('span')
 }
 
 const checkWord = () => {
-    if (scrollY > section2.offsetHeight - 150 && scrollY< section2.offsetHeight - 50 ){}
+    if (scrollY > section2.offsetHeight - 300 && scrollY < section2.offsetHeight - 150) {
+        changeWord();
+        animateWord(75)
+    }
+    else if(scrollY > section2.offsetHeight - 150 && scrollY< section2.offsetHeight - 50 ){
+        changeWord();
+        animateWord(75)
+    }
+    else if (scrollY > (section2.offsetTop * 2) - 150 && scrollY < (section2.offsetTop * 2) - 50) {
+        changeWord();
+        animateWord(75)
+    }
 }
 
 animateWord(0);
@@ -80,6 +91,7 @@ const handleScroll = () => {
     if (scrollY > (section2.offsetTop*2)-50){
         showWord();
     }
+    checkWord();
 }
 
 
